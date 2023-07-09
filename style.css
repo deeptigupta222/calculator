@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root {
+    --primary-color: #2a69c0;
+    --secondary-color: #0f466d;
+    --operator-color: #f39c12;
+    --display-color: #ffffff;
+    --gradient-start: #4e54c8;
+    --gradient-end: #8f94fb;
+  }
+  
+
+
+body{
+    /* background-image: linear-gradient(to right, #8360c3, #2ebf91); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(
+    to bottom right,
+    var(--gradient-start),
+    var(--gradient-end)
+  );
+
+    background-image: url(calll.jpg);
+    
+    /* background: linear-gradient(to bottom right,var(--gradient-start),var(--gradient-end)); */
+    /* background-image: url(zzzzzz.png); */
+    /* filter: blur(8px); */
+    /* -webkit-filter: blur(8px) ; */
+}
+
+.container{
+    width: 250px;
+    padding: 10px;
+    text-align: center;
+    grid-gap: 10px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    border: solid rgb(236, 86, 253);
+    
+    /* background-color: linear-gradient(to right, #8360c3, #2ebf91); */
+    
+
+    /* border: 2px solid red; */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+}
+
+
+#buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+   
+    
+}
+
+button{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(15, 15, 15);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 3px;
+    color:white;
+    cursor: pointer;
+    
+}
+
+button.operator{
+    background-color: #0f4660;
+    color: white;
+    border: solid rgb(98, 206, 249);
+}
+
+.operator:hover{
+    background-color: rgb(79, 79, 133);
+    
+}
+
+
+#equals:hover{
+    background-color: rgb(2, 85, 85);
+}
+
+#clear:hover{
+    background-color: #6e8e74;
+}
+
+.number:hover{
+    background-color: rgb(95, 112, 160);
+
+}
+
+.operator,
+.number{
+    font-size: large;
+    border: solid skyblue;
+
+}
+#equals{
+    font-size: large;
+    border: solid rgb(248, 209, 93);
+
+}
+#clear{
+    font-size: large;
+    border: solid rgb(246, 110, 110);
+
+}
+#display{
+    height: 50px;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: rgb(12, 48, 119);
+    color: rgb(236, 236, 232);
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: large;
+    outline: none;
+    
+}
